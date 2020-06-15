@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+.ui.menu {
+  padding: 20px;
+  background-color: #1eb39f;
+  color: #ffffff;
+}
+.ui.cards {
+  display: flex;
+  justify-content: center;
+  min-height: 416px;
+}
+.ui.pagination.menu {
+  margin-top: 30px;
+  list-style: none;
+}
+.ui.pagination.menu li {
+  padding: 10px;
+  color: #ffffff;
+}
+.ui.pagination.menu li a {
+  cursor: pointer;
+  color: #ffffff;
+  border: 1px solid #1edac1;
+  padding: 10px;
+}
+.ui.pagination.menu li a:hover {
+  cursor: pointer;
+  color: #1edac1;
+  background: #ffffff;
+  border: 1px solid #1edac1;
+}
+.ui.pagination.menu .active {
+  cursor: pointer;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inner-loader {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
 }
+.lds-ring div {
+  box-sizing: border-box;
 
-@keyframes App-logo-spin {
-  from {
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid aqua;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: aqua transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  min-height: 100vh;
+  background-color: aqua;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
   }
 }
