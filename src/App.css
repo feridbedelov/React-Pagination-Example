@@ -1,38 +1,13 @@
 .ui.menu {
-  padding: 20px;
   background-color: #1eb39f;
-  color: #ffffff;
+  height: 7vh;
 }
 .ui.cards {
   display: flex;
   justify-content: center;
-  min-height: 416px;
+  min-height: 60vh;
 }
-.ui.pagination.menu {
-  margin-top: 30px;
-  list-style: none;
-}
-.ui.pagination.menu li {
-  padding: 10px;
-  color: #ffffff;
-}
-.ui.pagination.menu li a {
-  cursor: pointer;
-  color: #ffffff;
-  border: 1px solid #1edac1;
-  padding: 10px;
-}
-.ui.pagination.menu li a:hover {
-  cursor: pointer;
-  color: #1edac1;
-  background: #ffffff;
-  border: 1px solid #1edac1;
-}
-.ui.pagination.menu .active {
-  cursor: pointer;
-  color: #ffffff;
-  border-color: #ffffff;
-}
+
 
 .inner-loader {
   display: flex;
@@ -40,6 +15,34 @@
   justify-content: center;
   align-items: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .lds-ring {
   display: inline-block;
